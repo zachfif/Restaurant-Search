@@ -1,5 +1,4 @@
 const apiKey = "pINwrZk0n2bMh_tqZ6z6sEQvqbfppyCv2SHdSYOOL8Jj_5y_hTsLKGKm65EwKKnefvvLxYdB3PanXlZPwYfTeLVSqIgBmg84T9TSSKlGoqagaLqOKEIfiiZzUsQQY3Yx";
-const ClientID = "_AZB4vdkK07-rZ4bd4mxiA";
 
 const Yelp = {
     search(term, location, sortBy) {
@@ -22,7 +21,9 @@ const Yelp = {
             zipCode: business.location.zip_code,
             category: business.categories[0].title,
             rating: business.rating,
-            reviewCount: business.review_count
+            reviewCount: business.review_count,
+            phone: business.phone,
+            url: business.url        
           }));
         }
       });
