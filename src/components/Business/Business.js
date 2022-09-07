@@ -19,6 +19,8 @@ class Business extends React.Component {
             <h3>{this.props.business.category.toUpperCase()}</h3>
             <h3 className="rating">{`${this.props.business.rating} stars`}</h3>
             <p>{`${this.props.business.reviewCount} reviews`}</p>
+            <p>{this.props.business.phone}</p>
+            <p>Website: <a href={this.props.business.url}>Click Here</a></p>
           </div>
         </div>
       </div>
